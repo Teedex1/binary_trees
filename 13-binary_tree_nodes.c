@@ -1,4 +1,4 @@
-#inlcude "binary_trees.h"
+#include "binary_trees.h"
 /**
  * binary_tree_nodes - counts the nodes
  * @tree: the tree to count
