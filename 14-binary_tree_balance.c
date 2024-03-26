@@ -23,7 +23,11 @@ size_t binary_tree_height_b(const binary_tree_t *tree)
 		return ((i > r) ? i : r);
 	}
 }
-
+/**
+ * binary_tree_balance - balances the binary tree
+ * @tree: the pointer
+ * Return: 0 or 1
+ */
 int binary_tree_balance(const binary_tree_t *tree)
 {
 	int right = 0, left = 0, total = 0;
@@ -32,6 +36,7 @@ int binary_tree_balance(const binary_tree_t *tree)
 	{
 		left = ((int)binary_tree_height_b(tree->left));
 		right = ((int)binary_tree_height_b(tree->right));
+		total = left - right;
 	}
 	return (total);
 }
